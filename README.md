@@ -6,7 +6,7 @@ You can either paste this in  your browser console on https://discord.com/
 
 or Run the file using Nodejs
 
-**INVALID BODY** means name is blacklisted
+**INVALID BODY** means name is blacklisted\Taken
 
 **Unauthorized** means name is available 
 
