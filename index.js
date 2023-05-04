@@ -1,5 +1,5 @@
-const token = "NDMyMTU4NDE1NTI4Mzk0NzYy.GUv1qK.MTcroq1kMKmWIJNTw744PhQ4T9HgqdQeCnSxlc";
-const name = "Sahazel";
+const token = "";
+const name = "";
 const headers = {"Content-Type": "application/json", "Authorization": token};
 
 (async function validate() {
