@@ -1,5 +1,5 @@
-const token = "NDMyMTU4NDE1NTI4Mzk0NzYy.G-YuXh.GNeSU2rO-e41KLlosvaZoy9fKo9NQTPAsnZYN4";
-const name = "Sahazel";
+const token = "";
+const name = "";
 const headers = {
     "Content-Type": "application/json",
     "Authorization": token
