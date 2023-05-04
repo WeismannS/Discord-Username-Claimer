@@ -8,7 +8,7 @@ or Run the file using Nodejs
 
 **INVALID BODY** means name is blacklisted\Taken
 
-**Unauthorized** means name is available 
+**Unauthorized** means name is available and will be ready to be taken when feature rolls out for user
 
 
 ## Disclaimer
