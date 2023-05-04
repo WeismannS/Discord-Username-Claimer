@@ -22,7 +22,7 @@ const requested = async (timeout) => {
 }
 
 (function recursive() {
-    const rand = Math.floor(Math.random() * (15000 - 3000 + 1)) + 3000;
+    const rand = Math.floor(Math.random() * (20000 - 3000 + 1)) + 3000;
     const timeout = setTimeout(async () => {
         await requested(timeout);
         recursive();
