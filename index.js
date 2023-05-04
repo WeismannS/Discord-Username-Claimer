@@ -17,6 +17,7 @@ const requested = async (timeout) => {
         clearTimeout(timeout);
     } else if (response.status === 429) {
         console.log("%cGot Rate limited", "color:orange");
+        await new Promise((res) => setTimeout(()=>res("foo"),(response.headers.get("Retry-After")+2 ) *1000))
     } else {
         console.log(`%c${response.statusText}`, "color:Red");
     }
