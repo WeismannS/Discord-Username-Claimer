@@ -14,7 +14,6 @@ const sleep = (time) => new Promise((res) => setTimeout(res,time));
     else console.log("Token Validated!")
 })();
 (async () => {
-    let old = 2000;
         for (let i = 0; i < Infinity; i++) {
             const random =  Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000
             const response = await fetch("https://discord.com/api/v10/users/@me/pomelo", {
@@ -42,10 +41,7 @@ const sleep = (time) => new Promise((res) => setTimeout(res,time));
                 default :
                     console.log(`%c${response.statusText}`, "color:Red");
             }
-            console.log(old,random)
-
-            await sleep(random)
-            old = random
+            await sleep(15000)
         }
     }
 )()
