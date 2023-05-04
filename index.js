@@ -3,9 +3,10 @@ const name = "";
 const headers = {"Content-Type": "application/json", "Authorization": token};
 
 (async function validate() {
-        const res = await fetch("https://discord.com/api/v9/users/@me", {method: "GET", headers})
-        if (res.status !== 200) throw new Error("Invalid Token")
-    })()
+    const res = await fetch("https://discord.com/api/v9/users/@me", {method: "GET", headers})
+    if (res.status !== 200) throw new Error("Invalid Token")
+    else console.log("Token Validated!")
+})()
 const requested = async (timeout) => {
     const response = await fetch("https://discord.com/api/v10/users/@me/pomelo", {
         method: "POST", body: JSON.stringify({username: name}), headers
