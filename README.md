@@ -6,3 +6,9 @@ You can either paste this in  your browser console on https://discord.com/
 
 or Run the file using Nodejs
 
+
+
+## Disclaimer
+This script is for educational purposes only. Use it at 
+your own risk. The author is not responsible for any consequences that 
+may result from using this script.
