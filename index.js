@@ -15,14 +15,14 @@ const sleep = (time) => new Promise((res) => setTimeout(res,time));
 })();
 (async () => {
         for (let i = 0; i < Infinity; i++) {
-            const random =  Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000
             const response = await fetch("https://discord.com/api/v10/users/@me/pomelo", {
                 method: "POST",
                 body: JSON.stringify({
                     username: name
                 }),
                 headers
-            }).catch(console.error);
+            }).catch();
+            if (!response) return;
             switch(response.status){
                 case 200 :
                     console.log("%cYou Got Your Username", "color:green");
