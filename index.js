@@ -22,7 +22,7 @@ const sleep = (time) => new Promise((res) => setTimeout(res,time));
                 }),
                 headers
             }).catch();
-            if (!response) return;
+            if (!response) continue;
             switch(response.status){
                 case 200 :
                     console.log("%cYou Got Your Username", "color:green");
