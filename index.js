@@ -21,7 +21,7 @@ const sleep = (time) => new Promise((res) => setTimeout(res,time));
                     username: name
                 }),
                 headers
-            }).catch();
+            }).catch(()=>{});
             if (!response) continue;
             switch(response.status){
                 case 200 :
